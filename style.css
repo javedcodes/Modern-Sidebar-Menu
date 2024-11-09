@@ -1,0 +1,98 @@
+/* Sets a light blue background color for the entire body */
+body {
+  background-color: #80e6ff;
+}
+
+/* Styles for the sidebar (aside) element */
+aside {
+  color: #fff; /* Text color inside the sidebar */
+  width: 250px; /* Width of the sidebar */
+  padding-left: 20px; /* Padding on the left side */
+  height: 100vh; /* Full viewport height */
+  background-image: linear-gradient(90deg , #bd1c00, #b86e00); /* Gradient background */
+  border-top-right-radius: 80px; /* Rounded top-right corner */
+}
+
+/* Styles for links inside the sidebar */
+aside a {
+  font-size: 12px; /* Small font size */
+  color: #fff; /* Text color */
+  display: block; /* Makes links block elements */
+  padding: 12px; /* Padding around links */
+  padding-left: 30px; /* Extra padding on the left */
+  text-decoration: none; /* Removes underline from links */
+  -webkit-tap-highlight-color: transparent; /* Removes tap highlight on mobile */
+}
+
+/* Hover effect for sidebar links */
+aside a:hover {
+  color: #000000; /* Changes text color to black on hover */
+  background: #fff; /* Changes background to white */
+  outline: none; /* Removes any outline */
+  position: relative; /* Positions relative for pseudo-elements */
+  border-top-left-radius: 20px; /* Rounded top-left corner on hover */
+  border-bottom-left-radius: 20px; /* Rounded bottom-left corner on hover */
+}
+
+/* Adds spacing between icon and text inside each sidebar link */
+aside a i {
+  margin-right: 5px;
+}
+
+/* Adds decorative effect below and above links on hover */
+aside a:hover::after {
+  content: ""; /* Empty content for decoration */
+  position: absolute;
+  background-color: transparent;
+  bottom: 100%; /* Positions it above the link */
+  right: 0;
+  height: 35px;
+  width: 35px;
+  border-bottom-right-radius: 18px; /* Rounded bottom-right corner */
+  box-shadow: 0 20px 0 0 #fff; /* Shadow effect */
+}
+
+aside a:hover::before {
+  content: ""; /* Empty content for decoration */
+  position: absolute;
+  background-color: transparent;
+  top: 38px; /* Positions it below the link */
+  right: 0;
+  height: 35px;
+  width: 35px;
+  border-top-right-radius: 18px; /* Rounded top-right corner */
+  box-shadow: 0 -20px 0 0 #fff; /* Shadow effect */
+}
+
+/* Styles for the paragraph inside the sidebar */
+aside p {
+  margin: 0;
+  padding: 40px 0; /* Padding on top and bottom */
+}
+
+/* Additional styles for body to ensure full height, width, and margin reset */
+body {
+  font-family: 'Roboto'; /* Sets font family */
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Removes default margin */
+}
+
+/* Placeholder styles for the social media section */
+.social {
+  height: 0; /* Sets height to zero for layout purposes */
+}
+
+/* Styles for icons inside the social media section */
+.social i:before {
+  width: 20px;
+  height: 20px;
+  font-size: 18px; /* Icon size */
+  position: fixed;
+  color: #fff; /* Icon color */
+  background: linear-gradient(90deg , #bd1c00, #b86e00); /* Gradient background for icon */
+  padding: 10px; /* Padding around the icon */
+  border-radius: 50%; /* Makes icon circular */
+  top: 10px;
+  right: 10px; /* Positions it in the top-right corner */
+}
